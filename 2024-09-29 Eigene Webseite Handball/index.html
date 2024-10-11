@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handball</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body id="Color">
+    <br><br>
+    <h1 id="Handball">Handball</h1>
+ 
+    <div>
+        <!-- Navigation für verschiedene Themenbereiche -->
+        <button class="Showhide" onclick="Handballarten()">Handball Arten</button>
+        <button class="Showhide" onclick="Handballgeschichte()">Handball Geschichte</button>
+        <button class="Showhide" onclick="Handballregeln()">Handball Regeln</button>
+        <button class="Showhide" onclick="Home()">Home</button>
+
+        
+        <div id="Handballarten">
+            <H1>Handballarten</H1>
+            <!-- Abschnitt über Hallenhandball -->
+            <h2>Hallenhandball</h2>
+            <p>Hallenhandball ist eine Mannschaftssportart, die in einer Halle auf einem Spielfeld von 40 x 20 Metern gespielt wird. Jedes Team besteht aus sieben Spielern (sechs Feldspieler und ein Torwart). Ziel des Spiels ist es, mehr Tore als die gegnerische Mannschaft zu erzielen, indem der Ball ins Tor geworfen wird. Ein Spiel hat zwei Halbzeiten von jeweils 30 Minuten. Spieler dürfen den Ball mit jedem Körperteil außer den Füßen spielen (außer der Torwart) und müssen nach maximal drei Schritten den Ball abspielen oder werfen. Hallenhandball ist besonders in Europa populär und wird in verschiedenen Ligen und internationalen Turnieren gespielt</p>
+            <img src="/image/Hallenhandball.jpg" alt="Hallenhandball" width="400">
+
+            <!-- Abschnitt über Feldhandball -->
+            <h2>Feldhandball</h2>
+            <p>Feldhandball war eine frühere Variante des Handballsports, die auf einem großen Spielfeld im Freien gespielt wurde. Mit elf Spielern pro Mannschaft und größeren Toren ähnelte es in vielen Aspekten dem Fußball. Besonders in den 1930er- bis 1950er-Jahren war Feldhandball in Europa populär und wurde 1936 sogar bei den Olympischen Spielen ausgetragen. Mit der Zeit wurde es jedoch vom Hallenhandball verdrängt, da dieser auf einem kleineren Spielfeld wetterunabhängig und schneller gespielt wird. Seit den 1960er-Jahren wird Feldhandball kaum noch praktiziert und gilt als historische Form des Handball</p>
+            <img src="/image/Feldhandball.JPG" alt="Feldhandball" width="400">
+            
+            <!-- Abschnitt über Beachhandball -->
+            <h2>Beachhandball</h2>
+            <p>Beachhandball ist eine dynamische Handballvariante, die auf Sand mit jeweils vier Spielern pro Team gespielt wird. Besonders spektakuläre Tore wie Drehwürfe werden extra belohnt, was das Spiel noch attraktiver macht. Zwei Halbzeiten zu je 10 Minuten sowie ein mögliches „Shootout“-Duell bei Gleichstand sorgen für Spannung. Seit den 1990er-Jahren wird Beachhandball international gespielt und ist seit 2001 Teil der World Games. Es kombiniert die taktischen Elemente des Hallenhandballs mit einer lockeren, publikumsnahen Strandatmosphäre.</p>
+             <img src="/image/Beachhandball.jpg" alt="Beachhandball" width="400">
+         
+         
+        </div>
+
+         <!-- Abschnitt über die Hallenhandball Geschichte -->       
+        <div id="Handballgeschichte">
+            <h1>Wie sit Handball entstanden</h1>
+            <p>Handball entwickelte sich Ende des 19. und Anfang des 20. Jahrhunderts in Europa, basierend auf verschiedenen Ballspielen. Der Berliner Lehrer Max Heiser und sein Kollege Carl Schelenz legten mit ihren Regelwerken den Grundstein für das moderne Handball. Zunächst wurde Feldhandball im Freien gespielt, bevor Hallenhandball ab den 1950er Jahren an Popularität gewann. Die Gründung der International Handball Federation (IHF) im Jahr 1946 standardisierte die Regeln international. Hallenhandball wurde 1972 für Männer und 1976 für Frauen eine olympische Disziplin. Heute ist es weltweit populär, besonders in Europa.</p>
+            <img src="/image/Handball geschihcte.jpg" alt="" width="400">
+        </div>
+
+        <!-- Abschnitt über die Hallenhandball Regeln-->
+        <div id="Handballregeln">
+            <h1>Regeln des Handballs</h1>
+            <p>Handball wird auf einem 40 x 20 Meter großen Spielfeld mit zwei Mannschaften zu je sieben Spielern (sechs Feldspieler und ein Torwart) gespielt. Das Spiel dauert 2 Halbzeiten à 30 Minuten. Unbegrenzte fliegende Auswechselungen sind erlaubt. Der Torraum darf nur vom Torwart betreten werden. Je nach Alters- und Geschlechtsgruppe wird mit unterschiedlich großen Bällen gespielt. Bei Unentschieden in K.o.-Spielen gibt es Verlängerungen oder ein 7-Meter-Werfen.</p>
+            <img src="/image/Spielfeld.jpg" alt="" width="400">
+        </div>
+
+    </div>
+    <!-- Abschnitt über Handball allgemein -->
+    <div id="Home">
+        <p>Handball ist eine Sportart, bei der zwei Mannschaften mit je sieben Spielern (sechs Feldspieler und ein Torwart) gegeneinander spielen. Das Ziel des Spiels besteht darin, den Handball in das gegnerische Tor zu werfen und damit ein Tor zu erzielen. Es gewinnt die Mannschaft, die nach Ablauf der Spielzeit die meisten Tore erzielt hat.</p>
+        <img src="image/Sprungwurf.jpeg" alt="Sprungwurf Handball" width="500">
+
+        <!-- Buttons zur Bildanzeige -->
+        <button onclick="show()" class="Showhide">Bild einblenden</button>
+        <button onclick="hide()" class="Showhide">Bild verstecken</button>
+        
+        <h3>Handball Positionen Grafik</h3>
+        <img src="image/Positionen.jpg" id="Bild1" alt="Handball Positionen">
+    </div>
+    <div class="settings">
+        <!-- Einstellungsoptionen für das Design -->
+        <button onclick="Black()">Schwarz</button>
+        <button onclick="White()">Weiß</button>
+
+        <label for="font">Schriftart auswählen:</label>
+        <select id="font" onchange="changeFont(this.value)">
+            <option value="Helvetica">Helvetica</option>        
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Roboto">Roboto</option>
+            <option value="Futura">Futura</option>
+            <option value="Garamond">Garamond</option>
+            <option value="Lato">Lato</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Montserrat">Montserrat</option>
+            <option value="Baskerville">Baskerville</option>
+        </select>
+    
+        <label for="fontSize">Schriftgröße auswählen:</label>
+        <select id="fontSize" onchange="changeFontSize(this.value)">
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>    
+            <option value="14">14</option>  
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="24">24</option> 
+            <option value="28">28</option>
+            <option value="32">32</option>
+            <option value="36">36</option>   
+        </select>
+    </div>
+</body>
+</html>

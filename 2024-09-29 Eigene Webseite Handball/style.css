@@ -1,0 +1,127 @@
+body {
+    /* Grundlegendes Layout für den Seiteninhalt */
+    font-family: Verdana;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+}
+
+h1 {
+    /* Hauptüberschrift zentriert und in Blau */
+    text-align: center;
+    color: #0077cc;
+}
+
+h2 {
+    /* Zweite Ebene der Überschrift in dunklerem Blau */
+    color: #005fa3;
+}
+
+p {
+    /* Absatzformatierung für bessere Lesbarkeit */
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+a { 
+    /* Gestaltung der Links als Schaltflächen */
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#Handball {
+    /* Große Schriftart für den Handball-Titel */
+    font-size: 50px;
+}
+
+a:hover {
+    /* Hover-Effekt für Links */
+    background-color: #005fa3;
+}
+
+img {
+    /* Bildzentrierung und Größenanpassung */
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Styling für verborgene Bilder */
+#Bild1 {
+    margin-left: 20px;
+    display: none; /* Standardmäßig versteckt */
+    float: none;
+    width: 400px;
+}
+
+/* Allgemeines Styling für Handball-Themen */
+#Handballarten,
+#Handballgeschichte,
+#Handballregeln {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 15px 0;
+    display: none; /* Standardmäßig versteckt */
+}
+
+h3 {
+    /* Dritte Ebene der Überschrift in Blau mit linker Einrückung */
+    color: #0077cc;
+    margin-left: 20px;
+    text-decoration: solid; /* Diese Regel hat keinen Effekt */
+}
+
+.Showhide {
+    /* Stil für Schaltflächen, die Inhalte ein-/ausblenden */
+    background-color: #0077cc;
+    color: white;
+    border: 2px solid #0077cc;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* sanfter Übergang */
+}
+
+.Showhideh:hover {
+    /* Hover-Effekt für die Show/Hide-Schaltfläche */
+    background-color: white;
+    color: #007BFF;
+}
+
+.settings {
+    /* Bereich für Einstellungen im Layout */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e7e7e7;
+    border-radius: 8px;
+    position: absolute; /* Positionierung im Layout */
+    top: 0;
+    left: 1px;
+}
+
+.settings button,
+.settings select {
+    /* Gestaltung der Schaltflächen und Auswahlfelder in den Einstellungen */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0077cc;
+    cursor: pointer;
+}
+
+.settings select {
+    /* Vollbreite für Auswahlfelder */
+    height: fit-content;
+}

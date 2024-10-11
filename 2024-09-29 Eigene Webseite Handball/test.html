@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handball</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Verdana;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 16px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0077cc; /* Main title color */
+        }
+
+        h2 {
+            color: #005fa3; /* Sub-title color */
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin: 15px 0;
+        }
+
+        a { 
+            display: inline-block;
+            width: 200px;
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            background-color: #0077cc; /* Link background color */
+            color: white; /* Link text color */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #005fa3; /* Hover color for links */
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        #Bild1 {
+            margin-left: 20px;
+            display: none; /* Hide by default */
+            float: none;
+            width: 400px; /* Fixed missing semicolon */
+        }
+
+        h3 {
+            color: #0077cc; /* Section title color */
+            margin-left: 20px;
+            text-decoration: underline; /* Changed to underline for better visibility */
+        }
+
+        .Showhide {
+            background-color: #0077cc; /* Button color */
+            color: white;
+            border: 2px solid #0077cc; /* Button border color */
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .Showhide:hover {
+            background-color: white; /* Hover color for buttons */
+            color: #007BFF; /* Hover text color */
+        }
+
+        .settings {
+            position: absolute;
+            top: 0;
+            left: 1px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body id="Color">
+    <h1>Handball</h1>
+    <br>
+    <br>
+    <br>
+    <div>
+        <a href="Arten von Handball.html">Handball Arten</a>
+        <a href="Geschichte.html">Handball Geschichte</a>
+        <a href="Regeln.html">Handball Regeln</a>
+        <h2>Was ist Handball</h2>
+    </div>
+
+    <p>Handball ist eine Sportart, bei der zwei Mannschaften mit je sieben Spielern (sechs Feldspieler und ein Torwart) gegeneinander spielen. Das Ziel des Spiels besteht darin, den Handball in das gegnerische Tor zu werfen und damit ein Tor zu erzielen. Es gewinnt die Mannschaft, die nach Ablauf der Spielzeit die meisten Tore erzielt hat.</p>
+    <img src="image/Sprungwurf.jpeg" width="500" alt="Sprungwurf">
+
+    <button onclick="show()" class="Showhide">Bild einblenden</button>
+    <button onclick="hide()" class="Showhide">Bild verstecken</button>
+
+    <h3>Handball Positionen Grafik</h3>
+    <img src="image/Positionen.jpg" id="Bild1" alt="Handball Positionen">
+
+    <div class="settings">
+        <button onclick="Black()">Schwarz</button>
+        <button onclick="White()">Weiß</button>
+
+        <label for="font">Schriftart auswählen:</label>
+        <select id="font" onchange="changeFont(this.value)">
+            <option value="Helvetica">Helvetica</option>        
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Roboto">Roboto</option>
+            <option value="Futura">Futura</option>
+            <option value="Garamond">Garamond</option>
+            <option value="Lato">Lato</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Montserrat">Montserrat</option>
+            <option value="Baskerville">Baskerville</option>
+        </select>
+
+        <label for="fontSize">Schriftgröße auswählen:</label>
+        <select id="fontSize" onchange="changeFontSize(this.value)">
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>    
+            <option value="14">14</option>  
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="24">24</option> 
+            <option value="28">28</option>
+            <option value="32">32</option>
+            <option value="36">36</option>   
+        </select>
+    </div>
+
+</body>
+</html>
