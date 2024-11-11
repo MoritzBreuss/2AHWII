@@ -5,7 +5,7 @@ let sum = 0;
 
 function selection() {
     const productDropdown = document.getElementById("product");
-    const productPrice = productDropdown.value;
+    const productPrice = Number(productDropdown.value);
     document.getElementById("output").innerHTML = productPrice + "€";
 }
 
