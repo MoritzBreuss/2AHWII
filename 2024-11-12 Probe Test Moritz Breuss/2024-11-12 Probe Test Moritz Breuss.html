@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+function Abstimmen(){
+    let name = document.getElementById("name").value;
+    let auswahl = document.getElementById("auswahl");
+    let wert = auswahl.value;
+    let namenlänge = name.length;
+
+    if (wert == 1 && namenlänge >= 5) {
+        alert("Sie " + name + " haben für " + auswahl.options[auswahl.selectedIndex].text + " abgestimmt. Vielen Dank!");
+    } else if (wert ==0){
+        alert("Bitte wählen Sie etwas aus.")
+    }
+    else{
+        alert("Bitte geben Sie einen Namen mit mehr als 5 zeichen ein!");
+    }
+
+}
+</script>
+<body>
+    <label >Name:</label>
+    <input  placeholder="Max Musterman" id="name">
+    <br>
+    <br>
+    <label for="">Auswahl:</label>
+    <select id="auswahl">
+        <option value="0"></option>
+        <option value="1">Apfel</option>
+        <option value="1">Birne</option>
+        <option value="1">Kirsche</option>
+        <option value="1">Marille</option>
+    </select>
+    <br>
+    <br>
+    <button onclick="Abstimmen()">Abstimmen</button>
+
+</body>
+</html>
+
+
