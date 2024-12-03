@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function absenden(){
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email");
+        let auswahl = document.getElementById("mahlzeit");
+        let wert = auswahl.value;
+        let nutzungsbedingungen = document.getElementById("Nutzungsbedingungen");
+        let namenlänge = name.length
+        let emailfield = email.value;
+
+        if(namenlänge == 0){
+            alert("Bitte geben sie ein Benutzernamen ein!")
+        }
+        else if(namenlänge < 5){
+            alert("Bitte geben sie einen längeren Benutzernamen ein!")
+        }
+        else if (!emailfield.includes(".") || !emailfield.includes("@")) {
+                alert("Ungültige E-mail-Adresse")
+        }
+        else if(wert == 0){
+            alert("Bitte wählen sie eine Mahlzeit aus!")
+        }
+        else if(!nutzungsbedingungen.checked){
+            alert("Bitte akzeptieren Sie die Nutzungsbedingungen!")
+        }
+        else{
+            alert("Sie " + name + " haben sich für " + auswahl.options[auswahl.selectedIndex].text + " angemeldet. Vielen Dank!"
+            )
+        }
+    }
+</script>
+<body>
+    <center><h1>1.SWP Test</h1></center>
+    <label for="">Benutzername:</label>
+    <input type="text" id="name" placeholder="Max Mustermann">
+    <br>
+    <label>E-mail:</label>
+    <input type="text" id="email" placeholder="beispiel@domain.com">
+    <br>
+    <label for="">Mahlzeit:</label>
+    <select name="" id="mahlzeit">
+        <option value="0">Bitte wählen Sie etwas aus</option>
+        <option value="1">Frühstück</option>
+        <option value="1">Mittagessen</option>
+        <option value="1">Abendessen</option>
+        <option value="1">Snack</option>
+    </select>
+    <br>
+    <label for="">Nutzungsbedingungen</label>
+    <input type="checkbox" id="Nutzungsbedingungen">
+    <br>
+    <button id="absenden" onclick="absenden()">Absenden</button>
+</body>
+</html>
