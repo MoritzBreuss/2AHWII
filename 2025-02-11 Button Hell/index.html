@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Verdoppler</title>
+    <script src="Script.js"></script>
+</head>
+<style>
+        #button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            max-width: 400px;
+            margin: auto;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            min-width: 80px;
+            text-align: center;
+        }
+</style>
+<body>
+    <h1 id="counter">Anzahl der Buttons: 1</h1>
+    <label>Wie viele Buttons möchten Sie löschen:</label>
+    <input id="input" type="number">
+    <button id="button1"  onclick="deleteButton()">löschen</button>
+    <div id="button-container">
+        <button onclick="addButtons()">Klick mich</button>
+    </div>
+
+</body>
+</html>
