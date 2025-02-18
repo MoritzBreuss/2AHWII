@@ -1,0 +1,15 @@
+#button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    min-width: 80px;
+    text-align: center;
+}
