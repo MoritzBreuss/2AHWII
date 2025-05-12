@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solana Clicker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Solana Clicker</h1>
+
+      <div class="buttons">
+        <button id="resetButton">Reset</button>
+        <Button id="ascendButton">Ascend</Button>
+      </div>
+    </header>
+    <main>
+      <!-- Stats -->
+      <div class="stats">
+        <h2 id="amount">Total Solana: 0</h2>
+        <h3 id="amountPerClick">Amount per click: 1</h3>
+        <h3 id="amountPerSecond">Amount per second: 0</h3>
+      </div>
+
+      <!-- Cookie -->
+      <div class="game">
+        <img id="my-svg" src="svgs/solana-svgrepo-com.svg" alt="Solana Coin" class="cookie" />
+      </div>
+
+      <!-- Upgrades -->
+      <div class="upgrades">
+        <h2>Upgrades</h2>
+        <label id="Upgrade1Price">Cursor Price: 10</label>
+        <img id="Upgrade1" src="svgs/cursor-svgrepo-com.svg" alt="Cursor Upgrade" />
+        <label id="Upgrade2Price"></label>
+        <img id="Upgrade2" src="svgs/avatar-elderly-grandma-svgrepo-com.svg" alt="">
+      </div>
+
+
+      <!-- Auto Clicker -->
+      <div class="autoClicker">
+        <h2>Auto Clicker</h2>
+        <label id="AutoClicker1Price">Grandma Price: 5000</label>
+        <img id="AutoClicker1" src="svgs/old-woman-svgrepo-com.svg" alt="Grandma Clicker" />
+        <label id="AutoClicker2Price">Factory Price: 100000</label>
+        <img id="AutoClicker2" src="svgs/factory-gas-illustration-2-svgrepo-com.svg" alt="Factory Clicker" />
+      </div>
+    </main>
+  </div>
+</body>
+</html>
