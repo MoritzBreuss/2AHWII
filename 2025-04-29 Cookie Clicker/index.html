@@ -1,54 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Solana Clicker</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <title>Rom – Die Ewige Stadt</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: #f5f1e6;
+      color: #2d2d2d;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #b22222;
+      color: #fff;
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    nav {
+      background: #800000;
+      padding: 0.5rem 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      padding: 2rem;
+    }
+    h2 {
+      color: #b22222;
+      margin-top: 2rem;
+    }
+    .gallery {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .gallery img {
+      width: 220px;
+      border-radius: 8px;
+      border: 2px solid #b22222;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      background: #eee;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #b22222;
+      color: #fff;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Solana Clicker</h1>
-
-      <div class="buttons">
-        <button id="resetButton">Reset</button>
-        <Button id="ascendButton">Ascend</Button>
+  <header>
+    <h1>Rom – Die Ewige Stadt</h1>
+    <p>Geschichte, Sehenswürdigkeiten und Kultur</p>
+  </header>
+  <nav>
+    <a href="#geschichte">Geschichte</a>
+    <a href="#sehenswuerdigkeiten">Sehenswürdigkeiten</a>
+    <a href="#essen">Essen</a>
+  </nav>
+  <main>
+    <section id="geschichte">
+      <h2>Geschichte</h2>
+      <p>
+        Rom, die Hauptstadt Italiens, wurde der Legende nach 753 v. Chr. gegründet. Sie war das Zentrum des Römischen Reiches, das über Jahrhunderte Europa, Nordafrika und Teile Asiens beherrschte. Heute ist Rom bekannt für seine beeindruckenden Bauwerke, seine Kunst und seine lebendige Kultur.
+      </p>
+    </section>
+    <section id="sehenswuerdigkeiten">
+      <h2>Sehenswürdigkeiten</h2>
+      <ul>
+        <li><strong>Kolosseum:</strong> Das berühmte Amphitheater aus der Antike.</li>
+        <li><strong>Petersdom:</strong> Die größte Kirche der Welt im Vatikan.</li>
+        <li><strong>Forum Romanum:</strong> Das politische und wirtschaftliche Zentrum des antiken Roms.</li>
+        <li><strong>Trevi-Brunnen:</strong> Der bekannteste Brunnen Roms – hier wirft man Münzen für Glück hinein.</li>
+        <li><strong>Spanische Treppe:</strong> Ein beliebter Treffpunkt und Fotomotiv.</li>
+      </ul>
+      <div class="gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg" alt="Kolosseum">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Vatican_City_-_St._Peter%27s_Basilica.jpg" alt="Petersdom">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Roman_forum_cesar.jpg" alt="Forum Romanum">
       </div>
-    </header>
-    <main>
-      <!-- Stats -->
-      <div class="stats">
-        <h2 id="amount">Total Solana: 0</h2>
-        <h3 id="amountPerClick">Amount per click: 1</h3>
-        <h3 id="amountPerSecond">Amount per second: 0</h3>
-      </div>
-
-      <!-- Cookie -->
-      <div class="game">
-        <img id="my-svg" src="svgs/solana-svgrepo-com.svg" alt="Solana Coin" class="cookie" />
-      </div>
-
-      <!-- Upgrades -->
-      <div class="upgrades">
-        <h2>Upgrades</h2>
-        <label id="Upgrade1Price">Cursor Price: 10</label>
-        <img id="Upgrade1" src="svgs/cursor-svgrepo-com.svg" alt="Cursor Upgrade" />
-        <label id="Upgrade2Price"></label>
-        <img id="Upgrade2" src="svgs/avatar-elderly-grandma-svgrepo-com.svg" alt="">
-      </div>
-
-
-      <!-- Auto Clicker -->
-      <div class="autoClicker">
-        <h2>Auto Clicker</h2>
-        <label id="AutoClicker1Price">Grandma Price: 5000</label>
-        <img id="AutoClicker1" src="svgs/old-woman-svgrepo-com.svg" alt="Grandma Clicker" />
-        <label id="AutoClicker2Price">Factory Price: 100000</label>
-        <img id="AutoClicker2" src="svgs/factory-gas-illustration-2-svgrepo-com.svg" alt="Factory Clicker" />
-      </div>
-    </main>
-  </div>
+    </section>
+    <section id="essen">
+      <h2>Typisches Essen</h2>
+      <ul>
+        <li><strong>Pasta Carbonara</strong></li>
+        <li><strong>Pizza Romana</strong></li>
+        <li><strong>Gelato</strong> (italienisches Eis)</li>
+        <li><strong>Espresso</strong></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Rom Webseite – Erstellt von Moritz Breuss
+  </footer>
 </body>
 </html>
